@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:ControlGallery"
+             xmlns:materials="clr-namespace:Xamarin.Material.Forms;assembly=Xamarin.Material.Forms" 
+             Title="Material TextField"
+             x:Class="ControlGallery.MainPage">
+        <StackLayout>
+            <materials:TextField Placeholder="Test" />
+            <materials:TextField Placeholder="Username" Text="test@example.com" />
+            <materials:TextField Placeholder="Username" Text="test@example.com" />
+            <materials:TextField Placeholder="Username" />
+            <materials:TextField Placeholder="Floating Disabled" FloatingEnabled="false" />
+            <materials:TextField Placeholder="Username" Error="Error" />
+            <materials:TextField Placeholder="Username*" HelperText="*Required" />
+            <materials:TextField Placeholder="Username*" HelperText="*Required" Error="Error" />
+        </StackLayout>
+</ContentPage>

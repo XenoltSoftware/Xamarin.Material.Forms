@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Xamarin.Material.Forms;assembly=Xamarin.Material.Forms" x:Class="Shrine.MainPage">
+    <!-- Place new controls here -->
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0,40,0,10" />
+    </ContentPage.Padding>
+    <StackLayout Margin="20" Spacing="20">
+        <Image Source="shrinelogo1.png" />
+        <Label Text="SHRINE" HorizontalTextAlignment="Center" />
+        <local:TextField x:Name="Email" Placeholder="Username" Keyboard="Email" />
+        <local:TextField x:Name="password" IsPassword="true" Placeholder="Password" />
+        <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" Spacing="20">
+            <Button Text="CANCEL" TextColor="Black" BackgroundColor="Transparent" />
+            <Button Text="NEXT" Clicked="Handle_Clicked" TextColor="White" BackgroundColor="Black" Padding="15,0" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
